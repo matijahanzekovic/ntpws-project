@@ -1,0 +1,51 @@
+body, html {
+	font-family: sans-serif;
+	margin: 0;
+	font-size: 16px;
+}
+
+header {
+	display: block;
+	width: 100%;
+}
+
+.header-img {
+	background-image: url("img/header-img.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	height: 300px;
+}
+
+h1 {
+	padding: 0.5em;
+}
+
+p {
+	margin: 1em;
+	line-height: 1.4em;
+	letter-spacing: 0.5px;
+}
+
+hr {
+	margin: 1em;
+	border: 1px dotted #27318b;
+	clear: both;
+}
+
+figure {
+	padding: 0.5em;
+	margin: 0 1em 0.5em 1em !important;
+	float: left;
+	width: 35%;
+	border: 1px solid black;
+}
+
+figcaption {
+	font-size: 90%;
+}
+
+img {
+	width: 100%;
+}
