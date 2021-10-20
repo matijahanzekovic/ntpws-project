@@ -18,11 +18,11 @@ header {
 	height: 300px;
 }
 
-h1 {
+.index-main h1, h2 {
 	padding: 0.5em;
 }
 
-p {
+.index-main p {
 	margin: 1em;
 	line-height: 1.4em;
 	letter-spacing: 0.5px;
@@ -48,4 +48,26 @@ figcaption {
 
 img {
 	width: 100%;
+}
+
+.news h1 {
+	padding: 0.5em;
+}
+
+.news p {
+	margin: 1em;
+	line-height: 1.4em;
+	letter-spacing: 0.5px;
+}
+
+.news-details p {
+	line-height: 1.2em;
+	letter-spacing: 0.5px;
+}
+
+video {
+	padding: 0.5em;
+	margin: 0 1em 0.5em 1em;
+	float: left;
+	width: 40%;
 }
