@@ -15,17 +15,7 @@
     <body>
 		<header>
 			<div class="header-img"></div>
-			<nav class="navbar navbar-expand-sm navbar-dark bg-primary">
-				<div class="navbar-collapse" id="navbarNavAltMarkup">
-				  <div class="navbar-nav">
-					<a class="nav-item nav-link active" href="index.html">Home</a>
-					<a class="nav-item nav-link" href="news.html">News</a>
-					<a class="nav-item nav-link" href="contact.html">Contact</a>
-					<a class="nav-item nav-link" href="about.html">About</a>
-					<a class="nav-item nav-link" href="gallery.html">Gallery</a>
-				  </div>
-				</div>
-			  </nav>
+			<?php include("navigation.php"); ?>
 		</header>
 		<main class="container news-details">
             <div class="row mt-4">
@@ -65,7 +55,7 @@
             <br>
             <p class="text-right"><time datetime="2021-10-19"><small class="text-muted">19 October 2021</small></time></p>
             <p>Source: <a href="https://www.bbc.com/news/world-latin-america-58966156">BBC.com</a></p>
-            <p><a href="news.html">Back to news</a></p>
+            <p><a href="news.php">Back to news</a></p>
 		</main>
 		<footer class="navbar navbar-expand-sm bg-primary">
 			<p class="text-center mx-auto mt-2" style="color:white">Copyright &copy; 2021 Matija Hanžeković</p>

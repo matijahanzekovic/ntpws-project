@@ -15,17 +15,7 @@
     <body>
 		<header>
 			<div class="header-img"></div>
-			<nav class="navbar navbar-expand-sm navbar-dark bg-primary">
-				<div class="navbar-collapse" id="navbarNavAltMarkup">
-				  <div class="navbar-nav">
-					<a class="nav-item nav-link active" href="index.html">Home</a>
-					<a class="nav-item nav-link" href="news.html">News</a>
-					<a class="nav-item nav-link" href="contact.html">Contact</a>
-					<a class="nav-item nav-link" href="about.html">About</a>
-					<a class="nav-item nav-link" href="gallery.html">Gallery</a>
-				  </div>
-				</div>
-			  </nav>
+			<?php include("navigation.php"); ?>
 		</header>
 		<main class="container">
 			<h1 class="mt-4 mb-4">Contact Form</h1>

@@ -15,17 +15,7 @@
     <body>
 		<header>
 			<div class="header-img"></div>
-			<nav class="navbar navbar-expand-sm navbar-dark bg-primary">
-				<div class="navbar-collapse" id="navbarNavAltMarkup">
-				  <div class="navbar-nav">
-					<a class="nav-item nav-link active" href="index.html">Home</a>
-					<a class="nav-item nav-link" href="news.html">News</a>
-					<a class="nav-item nav-link" href="contact.html">Contact</a>
-					<a class="nav-item nav-link" href="about.html">About</a>
-					<a class="nav-item nav-link" href="gallery.html">Gallery</a>
-				  </div>
-				</div>
-			  </nav>
+			<?php include("navigation.php"); ?>
 		</header>
 		<main class="container news">
             <div class="row">
@@ -38,7 +28,7 @@
                         <div class="card-body">
                             <h5 class="card-title">Haiti kidnappers 'demand $17m' for missionaries</h5>
                             <p class="card-text">A gang which kidnapped a group of missionaries from the US and Canada in Haiti on Saturday is demanding $1m (£725,000) in ransom for each of the 17 people it is holding, the Haitian justice minister has told the Wall Street Journal.
-                                <span><a href="news-1.html"><small class="text-muted">More...</small></a></span></p>
+                                <span><a href="news-1.php"><small class="text-muted">More...</small></a></span></p>
                             <p><time datetime="2021-10-19"><small class="text-muted">19 October 2021</small></time></p>
                         </div>
                     </div>
@@ -49,7 +39,7 @@
                         <div class="card-body">
                             <h5 class="card-title">Ecuador crime wave triggers state of emergency</h5>
                             <p class="card-text">A 60-day nationwide state of emergency has come into force in Ecuador. The measure was announced by President Guillermo Lasso on Monday evening in response to a wave of violent crime.
-                                <span><a href="news-2.html"><small class="text-muted">More...</small></a></span></p>
+                                <span><a href="news-2.php"><small class="text-muted">More...</small></a></span></p>
                             <p><time datetime="2021-10-19"><small class="text-muted">19 October 2021</small></time></p>
                         </div>
                     </div>
@@ -60,7 +50,7 @@
                         <div class="card-body">
                             <h5 class="card-title">Cleo Smith: 'Grave concerns' for Australian girl missing from beach campsite</h5>
                             <p class="card-text">Australian police say they have "grave concerns" for a four-year-old girl who disappeared from a remote coastal campsite at the weekend. 
-                                <span><a href="news-3.html"><small class="text-muted">More...</small></a></span></p>
+                                <span><a href="news-3.php"><small class="text-muted">More...</small></a></span></p>
                             <p><time datetime="2021-10-19"><small class="text-muted">19 October 2021</small></time></p>
                         </div>
                     </div>
