@@ -41,14 +41,15 @@
             $_SESSION['user']['firstname'] = $row['first_name'];
             $_SESSION['user']['lastname'] = $row['last_name'];
             $_SESSION['user']['role'] = $row['role'];
-            $_SESSION['message'] = '<p>Welcome, ' . $_SESSION['user']['firstname'] . ' ' . $_SESSION['user']['lastname'] . '</p>';
-            header("Location: index.php?menu=1");
+            createModal('Login page', 'Welcome, ' . $_SESSION['user']['firstname'] . ' ' . $_SESSION['user']['lastname'] . '');
+            showModal();
+		    header("refresh:2; url=index.php?menu=1");
         } else {
             unset($_SESSION['user']);
-            // createModal('Login', 'You entered wrong email or password!');
-            // showModal();
-            // $_SESSION['message'] = '<p>You entered wrong email or password!</p>';
-            header("Location: index.php?menu=7");
+            
+            createModal('Login page', 'You entered wrong email or password!');
+            showModal();
+		    header("refresh:2; url=index.php?menu=7");
         }
     }    
 

@@ -1,13 +1,13 @@
 <?php 
 
-	include("modal.php");
+	include("../modal.php");
 
 	$db = $GLOBALS['db'];
 	$menu = $_GET['menu'];
 	
 	# Update user profile
 	if (isset($_POST['edit']) && $_POST['_action_'] == 'TRUE') {
-		$query  = "UPDATE user SET first_name='" . $_POST['firstname'] . "', last_name='" . $_POST['lastname'] . "', email='" . $_POST['email'] . "', username='" . $_POST['username'] . "', country='" . $_POST['country'] . "', city='" . $_POST['city'] . "', street='" . $_POST['street'] . "', date_of_birth='" . $_POST['dateOfBirth'] . "', archive='" . $_POST['archive'] . "'";
+		$query  = "UPDATE user SET first_name='" . $_POST['firstname'] . "', last_name='" . $_POST['lastname'] . "', email='" . $_POST['email'] . "', username='" . $_POST['username'] . "', country='" . $_POST['country'] . "', city='" . $_POST['city'] . "', street='" . $_POST['street'] . "', date_of_birth='" . $_POST['dateOfBirth'] . "', role='" . $_POST['role'] . "', archive='" . $_POST['archive'] . "'";
         $query .= " WHERE id=" . (int)$_POST['edit'];
         $query .= " LIMIT 1";
         $result = @mysqli_query($db, $query);
@@ -56,6 +56,11 @@
 			<p><b>City:</b> ' . $row['city'] . '</p>
 			<p><b>Street:</b> ' . $row['street'] . '</p>
 			<p><b>Date of birth:</b> ' . $row['date_of_birth'] . '</p>
+			<p><b>Archive:</b>';if ($row['archive'] == 'Y') { 
+									print ' Active'; 
+								} else if ($row['archive'] == 'N') { 
+									print ' Inactive'; 
+								} print '</p>
 			<br>
 			<p><a href="index.php?menu='.$menu.'&amp;action='.$action.'">Back</a></p>
 		</div>';

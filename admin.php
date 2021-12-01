@@ -1,4 +1,7 @@
-<?php 
+<?php
+
+    include("modal.php");
+
 	if ($_SESSION['user']['valid'] == 'true') {
 		if (!isset($_GET['action'])) {
             $action = 0;
@@ -27,8 +30,9 @@
             include("admin/news.php"); 
         }
 	} else {
-		$_SESSION['message'] = '<p>Please register or login using your credentials!</p>';
-		header("Location: index.php?menu=7");
+        createModal('Administration page', 'Please register or login using your credentials!');
+        showModal();
+		header("refresh:2; url=index.php?menu=7");
 	}
     
 ?>

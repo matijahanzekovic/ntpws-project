@@ -47,7 +47,7 @@
             </div>
 			<br>
 			<div class="row">';
-			$query  = "SELECT * FROM news";
+			$query  = "SELECT * FROM news WHERE approved = 'Y'";
 			$query .= " ORDER BY date DESC";
 			$result = @mysqli_query($db, $query);
 

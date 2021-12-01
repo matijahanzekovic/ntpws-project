@@ -1,6 +1,6 @@
 <?php
 
-	include("modal.php");
+	include("../modal.php");
 
 	$db = $GLOBALS['db'];
 	$menu = $_GET['menu'];
@@ -46,11 +46,11 @@
 			$approved = 'N';
 		}
 
-		$query  = "UPDATE news SET title='" . htmlspecialchars($_POST['title'], ENT_QUOTES) . "', description='" . htmlspecialchars($_POST['description'], ENT_QUOTES) . "', archive='" . $_POST['archive'] . "'" . "', approved='" . $approved . "'";
+		$query  = "UPDATE news SET title='" . htmlspecialchars($_POST['title'], ENT_QUOTES) . "', description='" . htmlspecialchars($_POST['description'], ENT_QUOTES) . "', archive='" . $_POST['archive'] . "'" . ", approved='" . $approved . "'";
         $query .= " WHERE id=" . (int)$_POST['edit'];
         $query .= " LIMIT 1";
         $result = @mysqli_query($db, $query);
-		
+
 		# picture
         if($_FILES['picture']['error'] == UPLOAD_ERR_OK && $_FILES['picture']['name'] != "") {
 			$ext = strtolower(strrchr($_FILES['picture']['name'], "."));

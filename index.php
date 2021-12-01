@@ -22,13 +22,6 @@
 		$menu = 1; 
 	}
 
-	function setMessage() {
-		if (isset($_SESSION['message'])) {
-			print $_SESSION['message'];
-			unset($_SESSION['message']);
-		}
-	}
-
 	function resolvePage() {
 		if (!isset($_GET["menu"]) || $_GET["menu"] == 1) {
 			include("home.php");
@@ -48,6 +41,8 @@
 			include("admin.php");
 		} else if ($_GET["menu"] == 9) {
 			include("weather.php");
+		} else if ($_GET["menu"] == 10) {
+			include("logout.php");
 		}
 	}
 

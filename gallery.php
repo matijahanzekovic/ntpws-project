@@ -25,8 +25,6 @@
         }
         print '
         </div>
-        <br>
-        <p><a href="index.php?menu='.$menu.'&amp;action='.$action.'">Back</a></p>
     </div>';
 
 ?>

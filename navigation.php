@@ -14,7 +14,7 @@
             <ul class="navbar-nav">';
                 if (isset($_SESSION['user']['valid']) || $_SESSION['user']['valid'] == 'true') {
                     print '<li><a class="nav-item nav-link" href="index.php?menu=8">Admin</a></li>';
-                    print '<li><a class="nav-item nav-link" href="logout.php">Logout</a></li>';
+                    print '<li><a class="nav-item nav-link" href="index.php?menu=10">Logout</a></li>';
                 } else {
                     print '    
                         <li><a class="nav-item nav-link" href="index.php?menu=6">Register</a></li>
