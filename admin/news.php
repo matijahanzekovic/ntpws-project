@@ -155,7 +155,7 @@
 				<div class="form-group row mb-2">
 					<label for="description" class="col-sm-2 col-form-label">Description <span style="color: red;">*</span></label>
 					<div class="col-sm-6">
-						<textarea type="text" rows="5" class="form-control" name=description id="description" placeholder="Description"></textarea>
+						<textarea type="text" rows="5" class="form-control" name=description id="description" placeholder="Description" required></textarea>
 					</div>
 				</div>
 				<div class="form-group row mb-2">
@@ -179,7 +179,7 @@
 				<div class="form-group row mb-2">
 					<label for="imgDescription" class="col-sm-2 col-form-label">Picture description <span style="color: red;">*</span></label>
 					<div class="col-sm-6">
-						<textarea type="text" rows="3" class="form-control" name=imgDescription id="imgDescription" placeholder="Picture description"></textarea>
+						<textarea type="text" rows="3" class="form-control" name=imgDescription id="imgDescription" placeholder="Picture description" required></textarea>
 					</div>
 				</div>
 				<div class=form-group row mb-2">
@@ -237,7 +237,7 @@
 				<div class="form-group row mb-2">
 					<label for="description" class="col-sm-2 col-form-label">Description <span style="color: red;">*</span></label>
 					<div class="col-sm-6">
-						<textarea type="text" rows="5" class="form-control" name=description id="description" placeholder="Description">' . $imgRow['description'] . '</textarea>
+						<textarea type="text" rows="5" class="form-control" name=description id="description" required placeholder="Description">' . $imgRow['description'] . '</textarea>
 					</div>
 				</div>
 				<div class="form-group row mb-2">
@@ -255,7 +255,7 @@
 				<div class="form-group row mb-2">
 					<label for="imgDescription" class="col-sm-2 col-form-label">Picture description <span style="color: red;">*</span></label>
 					<div class="col-sm-6">
-						<textarea type="text" rows="3" class="form-control" name=imgDescription id="imgDescription" placeholder="Picture description">' . $imgRow['description'] . '</textarea>
+						<textarea type="text" rows="3" class="form-control" name=imgDescription id="imgDescription" required placeholder="Picture description">' . $imgRow['description'] . '</textarea>
 					</div>
 				</div>
 				<div class="form-group row mb-2">

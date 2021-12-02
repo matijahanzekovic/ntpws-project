@@ -1,6 +1,4 @@
 
-Snimio sam i video, ali je prevelik da bi pushao na github, pa se javi na mail: mhanzekov@tvz.hr
-
 Ako pokreneš Create_tables.sql i Insert_data.sql dodat će se 3 usera:
 
 administrator
